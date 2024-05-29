@@ -13,7 +13,7 @@ const StudentsList = () => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const response = await fetch('/api/students');
+        const response = await fetch('http://3.223.98.72:1337/api/students');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
